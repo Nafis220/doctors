@@ -42,7 +42,7 @@ const AddDoctor = () => {
 
     if (givenAllData) {
       const response = await axios.post(
-        "http://localhost:8080/api/v1/doctor/addDoctor",
+        "https://doctor-server-uani.onrender.com/api/v1/doctor/addDoctor",
         formData
       );
       if (Object.keys(response).length > 0) {
