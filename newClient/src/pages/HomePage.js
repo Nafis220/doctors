@@ -53,9 +53,9 @@ const HomePage = () => {
           <a class='navbar-brand' href='/doctors'>
             Doctors
           </a>
-          <a class='navbar-brand' href='/admin'>
+          <Link to='/admin' class='navbar-brand'>
             Admin Panel
-          </a>
+          </Link>
           <div class='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul class='navbar-nav me-auto mb-2 mb-lg-0'></ul>
             <div class='d-flex'>
