@@ -9,7 +9,7 @@ const Register = () => {
   //form handler
   const onfinishHandler = async (values) => {
     try {
-      const res = await axios.post("/api/v1/user/register", values);
+      const res = await axios.post("https://doctor-server-uani.onrender.com/api/v1/user/register", values);
       if (res.data.success) {
         message.success("Register Successfully!");
         navigate("/");
