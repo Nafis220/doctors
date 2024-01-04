@@ -7,7 +7,7 @@ const AppoinmentLists = () => {
     const getAllAppoinmentLists = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/v1/appoinment/getAllAppoinemnt"
+          "https://doctor-server-uani.onrender.com/api/v1/appoinment/getAllAppoinemnt"
         );
 
         const appoinments = response.data.Appoinments;
@@ -26,7 +26,7 @@ const AppoinmentLists = () => {
     console.log(id);
     try {
       await axios.delete(
-        `http://localhost:8080/api/v1/appoinment/deleteAppoinment?appoinment=${id}`
+        `https://doctor-server-uani.onrender.com/api/v1/appoinment/deleteAppoinment?appoinment=${id}`
       );
       document.getElementById(id).style.display = "none";
     } catch (error) {
