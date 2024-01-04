@@ -26,14 +26,14 @@ const PrivateRoute = () => {
     };
     cookie();
   }, []);
-
+  console.log(role);
   if (loading) {
     // Render a loading indicator if the role is still being determined
     return <div>Loading...</div>;
   }
 
   if (role === "admin") {
-    return <Outlet />;
+    return <AdminPanel />;
   } else {
     // Redirect to login page if the user is not an admin
     navigate("/login");
