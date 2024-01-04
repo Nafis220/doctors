@@ -4,7 +4,7 @@ const path = require("path");
 const fileUpload = () => {
   let imageName;
   const fileLocation = path.join(
-    `${__dirname}/../client/public/images/doctorImages`
+    `${__dirname}/../../newClient/public/images/doctorImages`
   );
 
   const fileStorageEngine = multer.diskStorage({

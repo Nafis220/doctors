@@ -2,9 +2,9 @@ const doctorModel = require("../models/doctorModel");
 
 const addDoctor = async (req, res) => {
   const newUser = new doctorModel(req.body);
-  await newUser.save();
 
   try {
+    await newUser.save();
     res.status(201).json("Doctor's Profile created successfully");
   } catch (error) {
     console.log(error);
