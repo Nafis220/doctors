@@ -60,7 +60,7 @@ const FindDoctors = () => {
 
       try {
         const response = await axios.post(
-          "http://localhost:8080/api/v1/appoinment/addAppoinment",
+          "https://doctor-server-uani.onrender.com/api/v1/appoinment/addAppoinment",
           appoinment
         );
 
