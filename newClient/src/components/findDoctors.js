@@ -63,8 +63,8 @@ const FindDoctors = () => {
           "https://doctor-server-uani.onrender.com/api/v1/appoinment/addAppoinment",
           appoinment
         );
-
-        if (response.statusText === "OK") {
+        console.log(response);
+        if (response.status === 200) {
           alert("An Appoinment Created Successfully!");
 
           document.getElementById(doctor._id).style.display = "none";
